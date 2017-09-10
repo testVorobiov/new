@@ -1,0 +1,164 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100vh
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	display: flex
+	flex-direction: column
+.container
+	width: 1024px
+	padding: 0
+	margin: 0 auto
+.navigation
+	display: inline-block
+.logo,.nav_item
+	display: inline-block
+	font-family: SegoeUI
+.logo
+	padding-left: 35px
+.nav_item
+	padding-right: 35px
+	&:last-child
+		padding: 0px 47px 0px 6px
+.nav_link
+	color: $boulder
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		color: $zambezi
+header,footer
+	flex-shrink: 0
+header
+	min-height: 89px
+	background: $white_light
+	display: inline-flex
+	align-items: center
+	position: absolute
+	width: 100%
+	z-index: 2
+.welcome
+	background: url(../img/favicon/slide_1-min.jpg)0 20% no-repeat fixed
+	background-size: cover
+	width: 100%
+	height: 588px
+	color: $white
+	display: flex
+	justify-content: center
+	.text
+		display: flex
+		flex-direction: column
+		justify-content: end
+		text-align: center
+		padding-bottom: 80px
+	.slogan
+		margin: 0
+		font-family: AlteHaasGrotesk_Bold
+		font-size: 68px
+		line-height: 70px
+		text-transform: uppercase
+	p
+		font-family: UniversLTStd-Light
+		font-size: 25px
+		margin: 0
+
+.navigation_wrapper
+	display: flex
+	justify-content: space-between
+	align-items: center
+.btn_login
+	border: none
+	background: $sunglo url(../img/favicon/login_icon.png)no-repeat 13px 8px
+	padding: 0 14px 0 33px
+	color: $white
+	border-radius: 3px
+	&:hover
+		background-color: $roman
+main
+	flex: 1 0 auto
+	background: red
+.about_us
+	display: flex
+	background: $white
+.skills_wrapper
+	display: flex
+	flex-direction: column
+	.text-skills
+	text-align: center
+	font-family: UniversLTStd-Light
+	.skills_slogan
+		margin: 0
+		padding-top: 50px
+		font-size: 35px
+p
+	margin: 0
+	padding-top: 5px
+	font-size: 17px
+.skills
+	display: flex
+	justify-content: space-around
+	padding: 80px 0 50px 0
+.skill_item
+	display: inline-block
+	width: 180px
+	height: 180px
+	border-radius: 50%
+.tickets
+	background: $blue
+.camera
+	background: $lima
+.beer
+	background: $sunset_orange
+.devices
+	background: $zest
+
+footer
+	min-height: 258px
+	background: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+@import "media" // Всегда в конце
